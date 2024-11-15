@@ -1,9 +1,8 @@
 // Set the target date and time (YYYY-MM-DD HH:MM:SS format)
-const targetDate = new Date("2024-11-17T00:00:00");
+const targetDate = new Date("2024-12-01T12:00:00");
 
-// Select the countdown and message elements
+// Select the countdown container
 const countdownElement = document.getElementById("countdown");
-const messageElement = document.getElementById("message");
 
 // Function to update the countdown
 function updateCountdown() {
@@ -23,9 +22,8 @@ function updateCountdown() {
     // Stop the countdown
     clearInterval(timer);
 
-    // Hide the countdown and show the message
-    countdownElement.style.display = "none";
-    messageElement.style.display = "block";
+    // Dynamically add the message
+    countdownElement.textContent = "🎉 Good Bye Shrishit  🎉  <br>Thank you so much for being a beautiful moment of my life. But I don't think so I can countiue this friendship";
   }
 }
 
